@@ -1,15 +1,14 @@
 var request =  new XMLHttpRequest();
-request.open("GET","https://restcountries.com/v3.1/all")
+request.open("GET","https://raw.githubusercontent.com/rvsp/restcountries-json-data/master/res-countries.json")
 request.send();
 request.onload = function(){
 var res = JSON.parse(request.response);
 console.log(res);
-for (var i=0;i<res.length;i++){
- if(res[i].capital[0]){
- console.log (res[i].capital[0]+" "+res[i].area)
-}
- else{
-    console.log ("Invalid capital");
+var population = res.filter((ele)=>ele.population<200000 )
+console.log (res)
+var country_name = population.map((ele)=>ele.capital)
+console.log (country_name)
+
  }
-}
-}
+
+
