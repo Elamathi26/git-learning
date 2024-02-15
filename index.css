@@ -1,0 +1,42 @@
+body{
+
+    background-color: whitesmoke;
+
+}
+
+ .text{
+
+  margin:20px 0px;
+
+   font-size: 12px;
+
+}
+
+a{
+
+    border-bottom: 1px solid blue;
+
+    margin-top:5px;
+
+}
+
+.box-part{
+
+    background-color: white;
+
+    padding:30px 5px;
+    margin:10px 0px;
+
+}
+
+.fa{
+
+    color:dodgerblue
+
+}
+
+.box{
+
+    padding: 60px 0px;
+
+}
